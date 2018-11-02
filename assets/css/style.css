@@ -585,21 +585,6 @@ nav ul li a:focus {
   color: #4f4f4f;
 }
 
-nav img {
-  vertical-align: middle;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-filter: grayscale(100%) opacity(0.7);
-  filter: grayscale(100%) opacity(0.7);
-}
-
-nav img:hover {
-  -webkit-filter: grayscale(100%) opacity(1);
-  filter: grayscale(100%) opacity(1);
-}
-
 @media (max-width: 979px) {
   nav {
     top: unset;
@@ -614,10 +599,6 @@ nav img:hover {
   nav ul li a:visited {
     line-height: 2em;
     text-decoration: underline;
-  }
-
-  nav img {
-    width: 30px;
   }
 }
 
@@ -698,7 +679,7 @@ a.button-inverted {
 }
 
 .section-hero__social {
-  margin-top: 25px;
+  margin-top: 8%;
 }
 
 .section-hero__social a {
