@@ -1,0 +1,85 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title DSConf 2019 | India's Premier Distributed Systems Conference
+    link(href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i', rel='stylesheet')
+    link(rel='stylesheet', href='assets/css/style.css')
+    link(rel='icon', type='image/png', href='assets/img/DSConf_logo.png')
+    // Search Engine
+    meta(name='description', content='Best Practices | Future of Distributed Systems')
+    meta(name='image', content='https://dsconf.in/assets/img/site-image-meta.jpg')
+    // Schema.org for Google
+    meta(itemprop='name', content="DSConf 2019 | India's Premier Distributed Systems Conference")
+    meta(itemprop='description', content='Best Practices | Future of Distributed Systems')
+    meta(itemprop='image', content='https://dsconf.in/assets/img/site-image-meta.jpg')
+    // Twitter
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:title', content="DSConf 2019 | India's Premier Distributed Systems Conference")
+    meta(name='twitter:description', content='Best Practices | Future of Distributed Systems')
+    meta(name='twitter:site', content='@dist_sys')
+    meta(name='twitter:creator', content='@dist_sys')
+    meta(name='twitter:image:src', content='https://dsconf.in/assets/img/site-image-meta.jpg')
+    // Open Graph general (Facebook, Pinterest & Google+)
+    meta(name='og:title', content="DSConf 2019 | India's Premier Distributed Systems Conference")
+    meta(name='og:description', content='Best Practices | Future of Distributed Systems')
+    meta(name='og:image', content='https://dsconf.in/assets/img/site-image-meta.jpg')
+    meta(name='og:url', content='https://dsconf.in')
+    meta(name='og:site_name', content='DSConf 2019')
+    meta(name='og:type', content='website')
+    script.
+      window.ga = window.ga || function() {
+      (ga.q = ga.q || []).push(arguments)
+      };
+      ga.l = +new Date;
+      ga('create', 'UA-115518698-1', 'auto');
+      ga('send', 'pageview');
+    script(async='', src='//www.google-analytics.com/analytics.js')
+  body
+    nav
+      .container
+        ul
+          li
+            a(href='sponsor/') Become a Sponsor
+          li
+            a(href='2018/') DSConf 2018
+          li
+            a(href='code-of-conduct/') Code of Conduct
+          li
+            a(href='https://www.youtube.com/channel/UCL7eo0uzidPltfX6b8-4KYQ?sub_confirmation=1', target='_blank', rel='noopener noreferrer') Watch DSConf 2018
+    main
+      section.section-hero
+        .container
+          .section-hero__wrapper
+            img.section-hero__logo(src='assets/img/DSConf2019_logo.svg', alt='DSConf 2019 logo', width='350')
+            h1 Distributed Systems Conference
+            p.primary.flow 16 February 2019   |   Pune
+            a.button(href='https://www.papercall.io/distributed-systems-conf') Submit a Talk
+            button.button-inverted(onclick="popup('distributed-systems-conference-2019-331002');") Register Now
+            .section-hero__social
+              a(href='https://twitter.com/dist_sys', target='_blank', rel='noopener noreferrer')
+                img(src='assets/img/twitter-white.svg', width='30', alt='dsconf twitter')
+              a(href='https://www.meetup.com/Distributed-Systems-Meetup/', target='_blank', rel='noopener noreferrer')
+                img(src='assets/img/meetup-white.svg', width='30', alt='dsconf meetup')
+      section.section-intro
+        .container
+          .section-intro__sections
+            .section-intro__section
+              h3 Have You Heard Of The Byzantine Problem?
+              p It's the classic scenario where the fate of a complete Army depends on the agreement between the Generals. Every General commands a batallion of troops, and their only options are retreat or attack. As long as all the Generals (or the majority) agree to one strategy, there's hope. To make matters worse, there are some Traitors present who would cast their vote selectively - agree with both the groups selectively.
+            .section-intro__section
+              h3 Or That Most of The Big Data Systems Never Make It To Production?
+              p Observability is the capability to monitor, analyse and proactively respond to events that occur at runtime in big data systems. Another factor that plays a major role is ‘Operability’ - does the organisation have the ability to operate the big data product. Operability is often termed as the Graveyard of Big Data projects!
+          br
+          p Blockchain and cryptocurreny are also based on Distributed Systems. Blockchain rather exemplifies a disritbuted computing system with high Byzantine Fault Tolerance!
+          br
+          p DSConf 2018 is conference dedicated to such problems! We have eminent academicians who've spent years researching such problems sharing their thoughts and approach with you. We also have distinguised engineers who've built some really large scale distributed systems talking about practical aspects of distributed systems. The talks are curated in a way to stimulate deep thinking as well has a practical approach to distributed systems.
+          br
+          p
+            em If you like geeking out on mathematical problems or building technology for the future, this conference is a must attend!
+      section.section-speakers
+        .container
+    noscript#tsNoJsMsg Javascript on your browser is not enabled.
+    script(src='//www.townscript.com/popup-widget/townscript-widget.nocache.js', type='text/javascript')

@@ -211,10 +211,10 @@ body {
 }
 
 p {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #4f4f4f
 }
 
@@ -905,6 +905,22 @@ a.button-inverted {
     font-size: 1.7em;
     padding-top: 50px
   }
+}
+
+.section-intro {
+  padding: 100px 0;
+}
+
+.section-intro__sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-intro__section {
+  flex: 1;
+  padding: 0 50px;
+  padding-left: 0;
 }
 
 .sticky-signup-form {
