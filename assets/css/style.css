@@ -910,13 +910,15 @@ a.button-inverted {
 
 .section-intro {
   padding-top: 100px;
-  padding-bottom: 10px;
+  padding-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .section-intro__sections {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 -30px;
 }
 
 .section-intro__section {
@@ -927,14 +929,6 @@ a.button-inverted {
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
 }
 
-.section-intro__sections .section-intro__section:first-child {
-  margin-left: 0;
-}
-
-.section-intro__sections .section-intro__section:last-child {
-  margin-right: 0;
-}
-
 .section-intro__content {
   padding: 30px;
   -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
@@ -942,12 +936,14 @@ a.button-inverted {
 }
 
 .section-speakers {
-  padding-top: 100px;
+  margin-top: -200px;
+  padding-top: 50px;
   padding-bottom: 100px;
   background-color: #ff8308;
   background-image: url('/assets/img/pattern.png');
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .section-speakers--shape-top {
@@ -957,7 +953,7 @@ a.button-inverted {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 500px 1500px 0 0;
+  border-width: 500px 1880px 0 0;
   border-color: #ffffff transparent transparent transparent;
   z-index: -1;
 }
