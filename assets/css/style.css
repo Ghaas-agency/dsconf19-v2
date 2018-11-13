@@ -940,7 +940,7 @@ a.button-inverted {
   padding-top: 50px;
   padding-bottom: 100px;
   background-color: #ff8308;
-  background-image: url('/assets/img/pattern.png');
+  background-image: url('../img/pattern.png');
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1017,7 +1017,8 @@ a.button-inverted {
 }
 
 .section-schedule {
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section-schedule-item {
@@ -1035,7 +1036,7 @@ a.button-inverted {
   text-align: center
 }
 
-.schedule-grey {
+.schedule-grey .section-schedule-item__left {
   background-color: #8d8d8d;
 }
 
@@ -1047,6 +1048,23 @@ a.button-inverted {
 .section-schedule-item__right {
   flex: 7;
   padding: 30px;
+  position: relative;
+}
+
+.section-schedule-item__right::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 30px 50px;
+  border-color: transparent transparent #ff8308 transparent;
+}
+
+.schedule-grey .section-schedule-item__right::after {
+  border-color: transparent transparent #8d8d8d transparent;
 }
 
 .section-schedule-item__right--text {
