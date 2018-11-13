@@ -59,10 +59,7 @@ html(lang='en')
             a.button(href='https://www.papercall.io/distributed-systems-conf') Submit a Talk
             button.button-inverted(onclick="popup('distributed-systems-conference-2019-331002');") Register Now
             .section-hero__social
-              a(href='https://twitter.com/dist_sys', target='_blank', rel='noopener noreferrer')
-                img(src='assets/img/twitter-white.svg', width='30', alt='dsconf twitter')
-              a(href='https://www.meetup.com/Distributed-Systems-Meetup/', target='_blank', rel='noopener noreferrer')
-                img(src='assets/img/meetup-white.svg', width='30', alt='dsconf meetup')
+              
       section.section-intro
         .container
           .section-intro__sections
@@ -121,6 +118,11 @@ html(lang='en')
                 p.truncate-text Dr. Srinivasan is a systems and programming languages geek with 30+ years of experience, from embedded devices to large-scale distributed systems and frameworks. He was one of the principal designers and implementors of the Weblogic application server. He has a PhD from the Univ. of Cambridge and teaches Distributed Systems at IIT Bombay.
               a.read-more READ MORE
           .section-schedule-item
+            .section-schedule-item__left.schedule-grey
+              p 11:30 PM
+            .section-schedule-item__right
+              h3 Lunch
+          .section-schedule-item
             .section-schedule-item__left
               p 9:30 AM
             .section-schedule-item__right
@@ -131,31 +133,71 @@ html(lang='en')
       section.section-about
         .container
           h2 About
-          p Who&apos;s running Distributed Systems Conference and why?
+          p 
+            strong Who&apos;s running Distributed Systems Conference and why?
           p 
             a(href="http://meetup.com/Distributed-Systems-Meetup/", target='_blank', rel='noreferrer noopener') Distributed Systems Pune Meetup
             |  is organising DSConf 2018. We want to help grow &amp; highlight all the work in the areas of Distributed Systems.
-          p I can't attend, will the videos be available later?
+          p 
+            strong I can't attend, will the videos be available later?
           p Yes, all the videos will be publicly available on 
             a(href="https://www.youtube.com/channel/UCL7eo0uzidPltfX6b8-4KYQ", target='_blank', rel='noreferrer noopener') YouTube
             | . They can also be viewed below.
 
       section.section-sponsors
-        .container
+        .section-sponsors__left
           h2 Sponsors
+        .section-sponsors__right
+          img(src="/assets/img/pattern.png", alt="")
 
       section.section-location
         .container
           h2 Location
-          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7564.523938641499!2d73.91137682258827!3d18.56222457027324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13f953dc837%3A0xb6782032b34e422e!2sNovotel+Pune+Nagar+Road!5e0!3m2!1sen!2sin!4v1542028023287', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+          p Hotel Novotel, Pune, Maharashtra
+          // iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7564.523938641499!2d73.91137682258827!3d18.56222457027324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13f953dc837%3A0xb6782032b34e422e!2sNovotel+Pune+Nagar+Road!5e0!3m2!1sen!2sin!4v1542028023287', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
 
       section.section-organisers
         .container
           h2 Organisers
+          .section-organisers__items
+            .section-organisers__item
+              img.section-organisers__item--avatar(src="/assets/img/sriram.jpg", alt="")
+              p Nishant Modak
+              a.section-organisers__item--link(href="https://www.linkedin.com/in/")
+                img(src="/assets/img/linkedin.svg", alt="linkedin")
+            .section-organisers__item
+              img.section-organisers__item--avatar(src="/assets/img/sriram.jpg", alt="")
+              p Nishant Modak
+              a.section-organisers__item--link(href="https://www.linkedin.com/in/")
+                img(src="/assets/img/linkedin.svg", alt="linkedin")
+            .section-organisers__item
+              img.section-organisers__item--avatar(src="/assets/img/sriram.jpg", alt="")
+              p Nishant Modak
+              a.section-organisers__item--link(href="https://www.linkedin.com/in/")
+                img(src="/assets/img/linkedin.svg", alt="linkedin")
+            .section-organisers__item
+              img.section-organisers__item--avatar(src="/assets/img/sriram.jpg", alt="")
+              p Nishant Modak
+              a.section-organisers__item--link(href="https://www.linkedin.com/in/")
+                img(src="/assets/img/linkedin.svg", alt="linkedin")
+            .section-organisers__item
+              img.section-organisers__item--avatar(src="/assets/img/sriram.jpg", alt="")
+              p Nishant Modak
+              a.section-organisers__item--link(href="https://www.linkedin.com/in/")
+                img(src="/assets/img/linkedin.svg", alt="linkedin")
 
     footer
-      .container
-        p Proudly hosted by Distributed Systems Meetup, Pune
+      .footer-links
+        .container
+          p Proudly hosted by Distributed Systems Meetup, Pune
+          a(href='https://twitter.com/dist_sys', target='_blank', rel='noopener noreferrer')
+            img(src='assets/img/twitter-white.svg', width='30', alt='dsconf twitter')
+          a(href='https://www.meetup.com/Distributed-Systems-Meetup/', target='_blank', rel='noopener noreferrer')
+            img(src='assets/img/meetup-white.svg', width='30', alt='dsconf meetup')
+
+      .footer-copyright
+        .container
+          a(href='https://ghaas.xyz', target='_blank', rel='noopener noreferrer') Powered by Ghaas
 
 
     noscript#tsNoJsMsg Javascript on your browser is not enabled.
