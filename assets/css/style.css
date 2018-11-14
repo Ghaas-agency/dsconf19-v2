@@ -568,6 +568,7 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: initial;
 }
 
 nav ul li {
@@ -601,6 +602,12 @@ nav ul li a:focus {
 
 .navbar-ul--first {
   display: none
+}
+
+.button.navbar-ul--last {
+  display: initial;
+  padding: 5px 15px;
+  font-size: 16px;
 }
 
 @media (max-width: 979px) {
@@ -638,6 +645,10 @@ nav ul li a:focus {
     font-size: 22px;
     font-weight: bold;
     padding-right: 20px;
+  }
+
+  .button.navbar-ul--last {
+    display: none;
   }
 
   .nav-menu-icon {

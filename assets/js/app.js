@@ -9,14 +9,15 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 })
 
-// Expand schedule details
 document.onclick = function(e) {
+  // Expand schedule details
   if(e.target.className === 'read-more') {
     var trucTextEl = e.target.parentElement.getElementsByClassName('section-schedule-item__right--text')[0];
     trucTextEl.style.maxHeight = 'unset';
     e.target.style.display = 'none';
   }
 
+  // Handle navbar display on mobile
   if(e.target.className === 'nav-menu-icon') {
     document.getElementById('navbar-ul').style.display = 'block';
   }
@@ -24,8 +25,6 @@ document.onclick = function(e) {
   if(e.target.parentElement.className === 'navbar-ul--first' || e.target.className === 'navbar-ul--first') {
     document.getElementById('navbar-ul').style.display = 'none';
   }
-
-  console.log(e.target);
 }
 
 // Add box-shadow to nav bar on scroll.
