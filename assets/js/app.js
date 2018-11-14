@@ -16,13 +16,23 @@ document.onclick = function(e) {
     trucTextEl.style.maxHeight = 'unset';
     e.target.style.display = 'none';
   }
+
+  if(e.target.className === 'nav-menu-icon') {
+    document.getElementById('navbar-ul').style.display = 'block';
+  }
+
+  if(e.target.parentElement.className === 'navbar-ul--first' || e.target.className === 'navbar-ul--first') {
+    document.getElementById('navbar-ul').style.display = 'none';
+  }
+
+  console.log(e.target);
 }
 
 // Add box-shadow to nav bar on scroll.
 window.onscroll = function() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").classList.add('main-shadow');
+    document.getElementById("navbar").classList.add('navbar-shadow');
   } else {
-    document.getElementById("navbar").classList.remove('main-shadow');
+    document.getElementById("navbar").classList.remove('navbar-shadow');
   }
 }

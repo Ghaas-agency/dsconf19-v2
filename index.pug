@@ -40,7 +40,11 @@ html(lang='en')
   body
     nav#navbar
       .container
-        ul
+        img.nav-menu-icon(src='assets/img/menu.svg')
+        a.button.nav-mob-cta(href="#!") Register now
+        ul#navbar-ul
+          li.navbar-ul--first
+            span x
           li
             a(href='sponsor/') Become a Sponsor
           li
@@ -49,7 +53,8 @@ html(lang='en')
             a(href='code-of-conduct/') Code of Conduct
           li
             a(href='https://www.youtube.com/channel/UCL7eo0uzidPltfX6b8-4KYQ?sub_confirmation=1', target='_blank', rel='noopener noreferrer') Watch DSConf 2018
-    main
+    
+    main#main
       section.section-hero
         .container
           .section-hero__wrapper
