@@ -18,26 +18,11 @@ document.onclick = function(e) {
   }
 }
 
-/* var prevScrollpos = window.pageYOffset;
+// Add box-shadow to nav bar on scroll.
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").classList.add('main-shadow');
   } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
-function myFunction(x) {
-  if (x.matches) {
-    document.body.style.backgroundColor = "yellow";
-  } else {
-    document.body.style.backgroundColor = "pink";
+    document.getElementById("navbar").classList.remove('main-shadow');
   }
 }
-
-var x = window.matchMedia("(max-width: 700px)");
-myFunction(x);
-x.addListener(myFunction);
- */
