@@ -501,6 +501,24 @@ a.button-inverted:focus {
   margin: 0 auto 2.5em auto
 }
 
+.dash-underline {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+
+.dash-underline::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ff8308;
+  height: 3px;
+  max-width: 50px;
+  width: 100%;
+  margin: 0 auto 2.5em auto
+}
+
 .lowercase {
   text-transform: lowercase
 }
@@ -736,13 +754,19 @@ a.button-inverted {
 }
 
 .section-hero h1 {
-  font-size: 2.5em
+  font-size: 2.5em;
+  margin-bottom: 15px;
 }
 
 .section-hero__wrapper {
   width: 70%;
   padding-top: 170px;
   padding-bottom: 270px
+}
+
+.section-hero .section-hero__logo {
+  max-width: 250px;
+  margin-bottom: 20px;
 }
 
 .section-hero a.button {
@@ -1190,6 +1214,10 @@ a.button-inverted {
   padding: 200px 0;
 }
 
+.section-sponsors__left img {
+  max-width: 200px;
+}
+
 .section-sponsors__right {
   flex: 1;
   position: relative;
@@ -1317,8 +1345,8 @@ a.button-inverted {
 }
 
 .footer-copyright a:hover, .footer-copyright a:focus {
-  font-size: 14px;
   margin: 0;
+  color: #f2f2f2;
 }
 
 /* Sticky signup form */
