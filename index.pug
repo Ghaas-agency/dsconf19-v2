@@ -180,11 +180,19 @@ html(lang='en')
 
       section.section-sponsors
         .container
-          .section-sponsors__left
-            h2.dash-underline Sponsors
+          .section-sponsors__wrapper
+            h2.dash-underline.dash-underline-center Sponsors
             h3 Gold Sponsor
-            img(src="assets/img/Trusting-Social-engineering-color-on-White.png", alt="Trusting Social Engineering logo")
-          .section-sponsors__right
+            a(href="https://trustingsocial.com", target="_blank", rel="noopener noreferrer")
+              img(src="assets/img/Trusting-Social-engineering-color-on-White.png", alt="Trusting Social Engineering logo", title="Trusting Social Engineering")
+            h3 Digital Sponsor
+            a(href="https://www.thoughtworks.com/", target="_blank", rel="noopener noreferrer")
+              img(src="assets/img/thought-works-logo.png", alt="Thought Works logo", title="Thought Works")
+            h3 Silver Sponsor
+            a(href="https://elastic.co/", target="_blank", rel="noopener noreferrer")
+              img(src="assets/img/elastic-logo.svg", alt="Elasticsearch logo", title="Elasticsearch")
+            div
+              a(href="sponsor/").button Become a Sponsor
 
       section.section-location
         .container
