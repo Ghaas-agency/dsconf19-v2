@@ -767,7 +767,7 @@ a.button-inverted {
 }
 
 .section-hero__wrapper {
-  width: 70%;
+  width: 65%;
   padding-top: 170px;
   padding-bottom: 270px
 }
@@ -811,7 +811,7 @@ a.button-inverted {
   display: inline-block;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .section-hero {
     background-position: 70% center;
     -webkit-background-size: cover;
@@ -832,50 +832,50 @@ a.button-inverted {
     width: 60%;
     padding: 100px 0
   }
-}
+} */
 
 @media (max-width: 979px) {
-  .section-hero {
+  /* .section-hero {
     background-position: center;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
-    background-image: url("../img/Mobile.jpg")
-  }
+    background-image: url("../img/Mobile.jpg");
+    padding-top: 0
+  } */
 
   .section-hero h1 {
-    font-size: 3em;
-    color: #F2F2F2;
-    padding-top: 100px
+    font-size: 2em;
   }
 
-  .section-hero .flow {
+  /* .section-hero .flow {
     color: #F2F2F2
   }
 
   .section-hero .button-inverted {
     background-color: #F2F2F2
-  }
+  } */
 
-  .section-hero .container {
-    -webkit-box-align: baseline;
-    -webkit-align-items: baseline;
-    -moz-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline
-  }
 
-  .section-hero .section-hero__logo {
+  /* .section-hero .section-hero__logo {
     width: 30%;
     margin-left: 70%;
     margin-top: 10px
-  }
+  } */
 
   .section-hero__wrapper {
-    width: 100%;
-    padding: 20px 0
+    /* width: 100%; */
+    padding: 120px 0
   }
+  .section-hero--right-img {
+    display: block;
+    position: absolute;
+    right: -15%;
+    top: 0;
+    z-index: 999;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -885,13 +885,15 @@ a.button-inverted {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: url("../img/Mobile.jpg")
+    background-image: url("../img/Mobile.jpg");
+    padding-bottom: 150px;
   }
 
   .section-hero h1 {
-    font-size: 2em;
     color: #F2F2F2;
-    padding-top: 50px
+    font-size: 1.7em;
+    padding-top: 80px;
+    width: 75%;
   }
 
   .section-hero .flow {
@@ -918,7 +920,7 @@ a.button-inverted {
 
   .section-hero__wrapper {
     width: 100%;
-    padding: 20px 0
+    padding: 20px 0;
   }
 
   .section-hero__links a:hover,
@@ -926,17 +928,6 @@ a.button-inverted {
   .section-hero__links a:focus {
     color: #efefef;
     border-bottom-color: #efefef
-  }
-}
-
-@media (max-width: 767px) {
-  .section-hero {
-    padding-bottom: 150px;
-  }
-
-  .section-hero h1 {
-    font-size: 1.7em;
-    padding-top: 80px
   }
 
   .section-hero--right-img {
@@ -950,6 +941,12 @@ a.button-inverted {
   .section-hero__social div {
     display: block;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-hero h1 {
+    width: 100%;
   }
 }
 
@@ -1208,7 +1205,8 @@ a.button-inverted {
   background-color: #f2f2f2;
   padding: 50px 0;
   text-align: center;
-  margin: 100px 0;
+  margin-top: 75px;
+  margin-bottom: 100px;
 }
 
 .section-sponsors__wrapper {
@@ -1260,7 +1258,6 @@ a.button-inverted {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .section-organisers__item {
@@ -1279,6 +1276,7 @@ a.button-inverted {
 
 .section-organisers__item--avatar {
   border-radius: 50%;
+  width: 120px;
 }
 
 .section-organisers__item--link {
@@ -1288,6 +1286,16 @@ a.button-inverted {
 .section-organisers__item--link img {
   width: 20px;
   margin-top: 0
+}
+
+@media (max-width: 767px) {
+  .section-organisers__item {
+    padding: 20px;
+  }
+
+  .section-organisers__item--avatar {
+    width: 80px;
+  }
 }
 
 /* Footer */
