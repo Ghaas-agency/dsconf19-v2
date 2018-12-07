@@ -1048,6 +1048,10 @@ a.button-inverted {
 }
 
 @media (max-width: 767px) {
+  .section-speakers__item {
+    max-width: 100%;
+  }
+
   .section-speakers__item--right {
     flex: 1;  
   }

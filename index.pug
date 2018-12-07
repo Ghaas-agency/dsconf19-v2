@@ -43,13 +43,21 @@ html(lang='en')
           li.navbar-ul--first
             span x
           li
-            a(href='sponsor/') Become a Sponsor
+            a(href='#speakers') Speakers
+          li
+            a(href='#schedule') Schedule
+          li
+            a(href='#about') About
+          li
+            a(href='#sponsors') Sponsors
+          li
+            a(href='#location') Location
+          li
+            a(href='#organisers') Organisers
           li
             a(href='2018/') DSConf 2018
           li
             a(href='code-of-conduct/') Code of Conduct
-          li
-            a(href='https://www.youtube.com/channel/UCL7eo0uzidPltfX6b8-4KYQ?sub_confirmation=1', target='_blank', rel='noopener noreferrer') Watch DSConf 2018
           li
             a.button.navbar-ul--last(onclick="popup('distributed-systems-conference-2019-331002');") Register now
     
@@ -84,7 +92,7 @@ html(lang='en')
             p
               em If you like geeking out on mathematical problems or building technology for the future, this conference is a must attend!
       
-      section.section-speakers
+      section#speakers.section-speakers
         .section-speakers--shape-top
         .container
           h2.dash-underline Speakers
@@ -136,7 +144,7 @@ html(lang='en')
           //-         strong Talk: 
           //-         | The Many Flavours Of Consensus
       
-      section.section-schedule
+      section#schedule.section-schedule
         .container
           h2.dash-underline Schedule
           .section-schedule-item
@@ -171,7 +179,8 @@ html(lang='en')
               .section-schedule-item__right--text
                 p.truncate-text Dr. Srinivasan is a systems and programming languages geek.
               a.read-more READ MORE
-      section.section-about
+      
+      section#about.section-about
         .container
           h2.dash-underline About
           p 
@@ -185,7 +194,7 @@ html(lang='en')
             a(href="https://www.youtube.com/channel/UCL7eo0uzidPltfX6b8-4KYQ", target='_blank', rel='noreferrer noopener') YouTube
             | . They can also be viewed below.
 
-      section.section-sponsors
+      section#sponsors.section-sponsors
         .container
           .section-sponsors__wrapper
             h2.dash-underline.dash-underline-center Sponsors
@@ -201,13 +210,13 @@ html(lang='en')
             div
               a(href="sponsor/").button Become a Sponsor
 
-      section.section-location
+      section#location.section-location
         .container
           h2.dash-underline Location
           p Hotel Novotel, Pune, Maharashtra
           iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7564.523938641499!2d73.91137682258827!3d18.56222457027324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13f953dc837%3A0xb6782032b34e422e!2sNovotel+Pune+Nagar+Road!5e0!3m2!1sen!2sin!4v1542028023287', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
 
-      section.section-organisers
+      section#organisers.section-organisers
         .container
           h2.dash-underline Organisers
           .section-organisers__items
@@ -253,4 +262,5 @@ html(lang='en')
 
     noscript#tsNoJsMsg Javascript on your browser is not enabled.
     script(src='//www.townscript.com/popup-widget/townscript-widget.nocache.js', type='text/javascript')
+    script(src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js")
     script(src='assets/js/app.js', type='text/javascript')

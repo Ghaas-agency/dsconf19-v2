@@ -1,3 +1,17 @@
+/* Smooth scroll. */
+if(typeof SmoothScroll !== 'undefined') {
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    offset: function(anchor, toggle) {
+      if(anchor.id === 'sponsors') {
+        return 150;
+      } else {
+        return 30;
+      }
+    },
+    updateURL: false,
+  });
+}
+
 // Hides "Read more" button of schedule items with less lines.
 window.addEventListener('DOMContentLoaded', function() {
   var truncTexts = document.getElementsByClassName('section-schedule-item__right--text');
