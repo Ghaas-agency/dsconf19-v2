@@ -105,10 +105,10 @@ html(lang='en')
                   h3 Milind Bhandarkar
                   p Founder, CTO, Ampool, Inc.
               .section-speakers__item--text
-                p Milind Bhandarkar is an experienced software architect and development manager, specialized in large distributed data-intensive computing. Member of the founding team at Yahoo! for Apache Hadoop. Deeply knowledgeable about the Hadoop ecosystem, and application frameworks for data analytics and machine learning.
+                p Milind Bhandarkar was the founding member of the team at Yahoo that took Apache Hadoop from 20-node prototype to datacenter-scale production system and has been contributing and working with Hadoop since version 0.1.0. He started the Yahoo Hadoop solutions team focused on training, consulting, and supporting hundreds of new migrants to Hadoop. Parallel programming languages and paradigms has been his area of focus for over 20 years. He worked at the Center for Development of Advanced Computing (C-DAC), National Center for Supercomputing Applications (NCSA), Center for Simulation of Advanced Rockets, Siebel Systems, Pathscale, Yahoo, LinkedIn, and Greenplum, a division of EMC. Prior to founding Ampool, Milind was the Chief Scientist at Pivotal. Milind holds his Ph.D. degree in Computer Science from the University of Illinois at Urbana-Champaign.
                 p.section-speakers__item--text-talk 
                   strong Talk: 
-                  | Modern Distributed Data Platforms for Hybrid Clouds
+                  | Architecting Modern Data Platforms for Hybrid Clouds
             //- .section-speakers__item
             //-   .section-speakers__item--wrapper
             //-     .section-speakers__item--left
@@ -149,36 +149,65 @@ html(lang='en')
           h2.dash-underline Schedule
           .section-schedule-item
             .section-schedule-item__left
-              p 9:00 AM
+              p 09:00 AM
             .section-schedule-item__right
-              h3 Good morning
+              h3 Registeration
           .section-schedule-item
             .section-schedule-item__left
-              p 9:30 AM
+              p 09:30 AM
             .section-schedule-item__right
-              h3 Modern Distributed Data Platforms for Hybrid Clouds
+              h3 Architecting Modern Data Platforms for Hybrid Clouds
               .section-schedule-item__right--text
-                p.truncate-text Historically, the data platforms had only two deployment targets: Bare metal, and Heavyweight Virtual Machines. Now, it’s a continuum of targets: Bare metal, VMs, MicroVMs (with just enough OS), containers, isolates, and functions. Modern control planes are logically centralized. Public clouds entering on-premises means same control planes (and associated hosted services) are available on both public clouds, and on-premises, making hybrid data planes possible. This fundamentally changes the distributed data platforms, and data-intensive application development. A prominent example is a distributed data analytics platform, e.g. a Hadoop platform, with a plug for Ampool as a modern data analytics platform. If I were to design Hadoop-like platform today, how will I design & develop it. This covers all aspects of the platform control plane such as resource scheduling, orchestration, resource isolation, allocation, management, monitoring, scaling, metrics, metering, logging etc.
+                p In the last decade, since the emergence of public clouds, a hard boundary has remained between public clouds and on-premises infrastructures and services. With Azure Stack, GKE, VMWare on AWS, and recent announcements about AWS Outposts, it is clear that the line between public clouds and on-premises infrastructures and services is blurring. Recent developments in the industry, such as merger between Hadoop rivals Cloudera & Hortonworks, as well as IBM's acquisition of RedHat, indicate a trend that an exciting hybrid cloud future awaits us. Public clouds entering on-premises means same logically centralized control planes (and associated managed services) will be available on both public clouds, and on-premises, making hybrid data planes possible. In addition, software systems deployment targets, which until recently were limited to bare metal and heavyweight virtual machines, have proliferated. They now include a hierarchy: Bare metal physical machines, Virtual Machines, MicroVMs, Containers, Isolates, & Functions. This fundamentally changes how distributed data platforms and data-intensive applications will be developed. This talk outlines the architectural building blocks that can be used in specific design patterns for developing modern distributed data platforms. We will draw from our experiences in developing a prominent distributed data analytics platform, Apache Hadoop, and outline how such a platform could be built today with modern building blocks. We intend to cover most aspects of the platform control planes such as high availability, disaster recovery, security, resource scheduling, orchestration, resource isolation, allocation, management, monitoring, scaling, metrics, metering, and logging. I will illustrate this architectural paradigm shift with some of the design choices we have made at Ampool, a modern data analytics platform.
               a.read-more READ MORE
+              a.collapse COLLAPSE
               .section-schedule-item__right--speaker
-                p
+                .section-schedule-item__right--speaker-left
                   img(src="assets/img/milind-bhandarkar.jpg", alt="Milind Bhandarkar")
-                  span Milind Bhandarkar
+                .section-schedule-item__right--speaker-right
+                  p Milind Bhandarkar
                     br
                     span.normal Founder, CTO, Ampool, Inc.
           .section-schedule-item.schedule-grey
             .section-schedule-item__left
-              p 11:30 PM
+              p 10:30 AM
+            .section-schedule-item__right
+              h3 Tea Break
+          .section-schedule-item
+            .section-schedule-item__left
+              p 11:00 AM
+            .section-schedule-item__right
+              h3 TBD
+          .section-schedule-item.schedule-grey
+            .section-schedule-item__left
+              p 12:00 PM
             .section-schedule-item__right
               h3 Lunch
           .section-schedule-item
             .section-schedule-item__left
-              p 9:30 AM
+              p 01:00 PM
             .section-schedule-item__right
-              h3 Good night
-              .section-schedule-item__right--text
-                p.truncate-text Dr. Srinivasan is a systems and programming languages geek.
-              a.read-more READ MORE
+              h3 TBD
+          .section-schedule-item
+            .section-schedule-item__left
+              p 02:15 PM
+            .section-schedule-item__right
+              h3 TBD
+          .section-schedule-item.schedule-grey
+            .section-schedule-item__left
+              p 03:00 PM
+            .section-schedule-item__right
+              h3 High Tea
+          .section-schedule-item
+            .section-schedule-item__left
+              p 03:45 PM
+            .section-schedule-item__right
+              h3 TBD
+          .section-schedule-item
+            .section-schedule-item__left
+              p 04:15 PM
+            .section-schedule-item__right
+              h3 TBD
       
       section#about.section-about
         .container
